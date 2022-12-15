@@ -1,0 +1,359 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: supermolot;
+    background-color: rgb(63, 64, 69);
+    animation: transitionIn 0.2s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container{
+    background-color: rgb(55, 56, 61);
+    min-height: 50%;
+}
+.home-page-background{
+    opacity: 0.2;
+}
+.brief{
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    font-size: 20px;
+    color: rgb(216, 219, 225);
+    max-width: 40%;
+    
+}
+.join-us-link{
+    color: rgb(216, 219, 225);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: supermolot;
+    position: absolute;
+    top: 500px;
+    left: 180px;
+}
+.join-us-button{
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid rgb(216, 219, 225);
+
+}
+.join-us-button:hover{
+    border-color: rgb(254, 92, 93);  
+    color: rgb(254, 92, 93);  
+}
+.login-form{
+    position: absolute;
+    background-color: rgb(63, 64, 69);
+    width: 400px;
+    height: 600px;
+    left: 750px;
+    top: 150px;
+}
+.user-name-field, .password-field , #personal-name-field{
+    margin: 10px 20px;
+    padding: 0 10px;
+    width: 340px;
+    height: 35px;
+    font-size: 14px;
+    font-family: supermolot;
+    background-color: rgb(74, 75, 79);
+    color: rgb(216, 219, 225);
+    border: none;
+    
+
+}   
+.user-name-field:focus, .password-field:focus ,#personal-name-field:focus{
+    outline: solid 2px rgb(254, 92, 93);
+}
+.user-name-label, .password-label, .user-type-label{
+    color: rgb(216, 219, 225);
+    font-weight: bold;
+    margin: 30px 20px;
+
+}
+.login-button, .signup-form input[type = 'submit']{
+    margin: 20px 30px;
+    padding: 0 10px;
+    width: 340px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: supermolot;
+    border: 2px solid rgb(254, 92, 93);
+    background-color: rgb(254, 92, 93);
+    color: rgb(216, 219, 225);
+}
+.login-button:hover, .signup-form input[type = 'submit']:hover{
+    color: rgb(216, 219, 225);
+    border-color: rgb(216, 219, 225);
+    cursor: pointer;
+}
+.login-header{
+    font-size: 100px;
+    margin: 0 10px;
+    color: rgba(216, 219, 225, 0.6);
+}
+.pick-user-type{
+    margin: 20px 0 20px 30px;   
+}
+.pick-user-type-label:hover, .pick-user-type:hover{
+    cursor: pointer;
+}
+.pick-user-type-label{
+    color: rgb(216, 219, 225);
+    
+}
+.show-password-button, 
+.signup-show-password-button{
+    position: absolute;
+    top: 310px;
+    left: 350px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent   ;
+    border: none;
+}
+.show-password-button img,
+.signup-show-password-button img{
+    width: 25px;
+}
+.show-password-button:hover,
+.signup-show-password-button:hover{
+    cursor: pointer;
+}
+
+.signup-form{
+    position: absolute;
+    left: 120px;
+    top: 150px;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(63, 64, 69);
+    padding: 10px 20px;
+}
+#signup-header{
+    color: rgba(216, 219, 225, 0.5);
+    font-family: supermolot;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px 20px;
+}
+#label-of-fields{
+    color: rgb(216, 219, 225);
+    font-size: 18px;
+    margin: 10px 20px;
+    
+}
+#personal-name-field{
+    width: 150px;
+    margin: 10px -5px 10px 20px;
+
+}
+.signup-form input[type = 'submit']{
+    position: absolute;
+    left: 550px;
+    top: 500px;
+    
+}
+.gmail-label, #gmail-field,
+ .phone-number-label, #phone-number-field{
+    position: absolute;
+    top: 150px;
+    left: 550px;
+}
+#gmail-field{
+    top: 180px;
+}
+.phone-number-label{
+    top: 230px;
+}
+#phone-number-field{
+    top: 260px;
+}
+#phone-number-field::-webkit-outer-spin-button,
+#phone-number-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#phone-number-field[type=number] {
+  -moz-appearance: textfield;
+}
+#signup-recapcha{
+    position: absolute;
+    background-color: rgb(74, 75, 79);
+    left: 570px;
+    top: 320px;
+    height: 150px;
+    width: 360px;
+}
+
+.signup-show-password-button{
+    top: 365px;
+    left: 370px;
+}
+.back-to-login-arrow{
+    position: absolute;
+    top: 100px;
+    left: 900px ;
+    background-color: transparent;
+    width: 40px;
+    height: 20px;
+    border-radius: 5px; 
+}
+.back-to-login-arrow:hover{
+    background-color: rgba(254, 92, 93, 0.7);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-to-login-arrow img{
+    height: 20px;
+}
+#change-image:hover{
+    background-color: rgba(255, 255, 255, 0.12);
+    width: fit-content;
+    height: fit-content;
+}
+#show_response{
+    position: absolute;
+    top: 230px;
+    left: 250px;
+    text-align: right;
+    color: brown;
+    font-size: 18px;
+}
+#login-user-type{
+    font-family: supermolot;
+    width: 340px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: rgb(216, 219, 225);
+    background-color: rgb(74, 75,79);
+    border-color:transparent;
+}
+#login-user-type option:hover,
+#login-user-type:hover{
+    cursor: pointer;
+    border-color: rgba(254, 92, 93, 0.5); 
+}
+
+#usernotexist, #usrnmSignuperr{
+    position: absolute;
+    display: none;
+    color: rgb(234, 182, 27);
+    font-size: 12px;
+    top: 190px;
+    left: 220px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    transition: 0.2s;    
+}
+#invalidLogin{
+    position: absolute;
+    width: 350px;
+    left: 850px;
+    top: 270px;
+    color: rgb(234, 182, 27);
+    font-size: 12px;
+    opacity: 0;
+}
+#usrnmSignuperr{
+    left: 240px;
+    top: 250px;
+    display: block;
+    border: none;
+}
+#gmailCheck{
+    position: absolute;
+    color: rgb(234, 182, 27);
+    font-size: 12px;
+    top: 160px;
+    left: 790px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+input{
+    transition: 0.5s;
+}
+#passconferr, #phoneerr{
+    position: absolute;
+    color: rgb(234, 182, 27);
+    font-size: 12px;
+    top: 400px;
+    left: 260px;
+    height: 20px;
+    width: fit-content;
+    text-align: center;
+}
+#phoneerr{
+    left: 790px;
+    top: 240px;
+}
+
+#confirmationWindow{
+    position: fixed;
+    background-color: rgb(43, 44, 45);
+    width: 350px;
+    padding-bottom: 20px; 
+    color: rgb(215, 220, 223);
+    top: 35%;
+    left: 39%;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: none;
+}
+#confirmationWindow h2{
+    font-size: 22px;
+    
+}
+#confirmationWindow p{
+    font-size: 16px;
+    background-color: rgba(21, 22, 22, 0.5);
+    margin: 5px 35px;
+    border-radius: 4px;
+    
+}
+#confirmationWindow span{
+    float: right;
+    font-size: 16px;
+    margin: 5px;
+    width: 20px;
+    border: 2px solid rgb(165, 42, 42);
+    border-radius: 50px;
+    text-align: center;
+}
+#confirmationWindow span:hover{
+    cursor: pointer;
+    background-color: rgb(165, 42, 42);
+}
+#confirmationWindow button:hover{
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+}

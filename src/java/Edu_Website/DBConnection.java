@@ -1,0 +1,27 @@
+package Edu_Website;
+
+
+import com.mysql.jdbc.Connection;
+import java.sql.DriverManager;
+
+public abstract class DBConnection {
+    
+    String url = "";
+    String userName = "";
+    String password = "";
+    
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /*public DBConnection(String url, String username, String password) {
+        this.url = url;
+        this.userName = username;
+        this.password = password;
+    }*/
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public Connection connect (){
+        
+        return null; 
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+}
